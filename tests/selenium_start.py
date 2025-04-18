@@ -5,6 +5,7 @@ import time
 driver = webdriver.Chrome()
 driver.get("https://itcareerhub.de/ru")
 about_link = driver.find_element(By.LINK_TEXT, 'О нас')
+assert about_link
 about_link.click()
 time.sleep(5)
 driver.quit()
